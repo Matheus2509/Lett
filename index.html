@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="y2i4bbdmhrv61.webp" type="image/x-icon">
+    <title>Te amo!</title>
+        
+    <style>
+       body{
+        background-color: #E63946;
+        text-align: center;
+        justify-items: center;
+    }
+        .painel{
+        padding-top: 20px;
+        margin: auto;
+        width: 500px;
+        height: auto;
+        background-color: #FFC0CB;
+        border-radius: 20px;
+        
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    
+    h1{
+      font-size: 500;
+
+    }
+    
+    #sim{
+        
+        width: 80px;
+        height: 60px;
+        border-radius: 10px;
+        background-color: #E63946;
+        color: bisque;
+        font-size: 25px;
+        margin-left: -90px;
+        
+        
+    }
+    #nao{
+        position: absolute;
+        width: 100px;
+        height: 60px;
+        border-radius: 10px;
+        background-color: #E63946;
+        color: bisque;
+        font-size: 25px;
+        margin-left: 10px;
+        
+    }
+
+
+    </style>
+
+</head>
+<body>
+
+    <div class="painel">
+        <h2>Entre 2.136 km, Lett e Theus, até porque essa distância é só um número.</h2>
+        <img src="https://gifman.net/wp-content/uploads/2019/06/ursinhos-fofos-mordidas.gif">
+        <h3>Você deseja me encontrar de novo, em algum lugar, em algum momento? "-Diana"</h3>
+
+
+    <a href="video.html"><button id="sim"> Sim! </button></a>
+    <button onclick= "fuja()" id="nao"> Não! </button>
+
+
+</div>
+<script>
+
+    function fuja(){
+        var botaoNao = document.getElementById("nao")
+        
+        var larguraJanela = window.innerWidth;
+        var alturaJanela = window.innerHeight;
+
+        var maxX = larguraJanela - botaoNao.offsetWidth;
+        var maxY = alturaJanela - botaoNao.offsetHeight;
+
+        var aleatorioX = Math.floor(Math.random() * maxX);
+        var aleatorioY = Math.floor(Math.random() * maxY);
+
+        botaoNao.style.left = aleatorioX + "px";
+        botaoNao.style.top = aleatorioY + "px";
+    }
+</script>
+
+</body>
+</html>
